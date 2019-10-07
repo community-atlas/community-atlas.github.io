@@ -1,3 +1,3 @@
 [submodule "commaBrowser"]
 	path = commaBrowser
-	url = git@github.com:community-atlas/commaBrowser.git
+	url = https://github.com/community-atlas/commaBrowser.git

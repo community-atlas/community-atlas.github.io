@@ -1,1 +1,2 @@
-# community-atlas.github.io
+# The Community Atlas Reference 
+

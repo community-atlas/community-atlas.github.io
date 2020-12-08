@@ -2,8 +2,61 @@
 <head>
 <head>
 <body>
-<p>The community atlas github base. </p>
-<p>Projects:</p>
+<h1>Community Atlas Project</h1>
+
+  <h2>Project Architecture</h2>
+<p><strong>
+  The Community Atlas is constructed with a few, loosely connected parts. Rather than building one tool to create, view and store atlases, we have split the project into separate elements that communicate through an open data standard. This “decoupled” architecture allows each aspect to be developed independently, and maximises the possible longevity and reusability of the technical work. 
+  </strong></p>
+  
+  <h3>The Community Mapping Geo Data standard</h3>
+<img src="https://lh3.googleusercontent.com/-2TiOJI8wNnQagSj2SYeW9lu3uwkJcW6bNOrDe-cDyboLAowR5AwUrukjl7J4oSaHIof95HC4X_bvP8s-nzosIULkUE1BrZlkx7eZiY_cjGuumNHvniSKelf041Dliof2gF0rINR"/>
+  <p>The foundation of the atlas platform is a way of storing and sharing geodata. This standard is based on geoJSON,
+    the primary open standard for sharing geo information, but extends this base to include a set of features that better suit the
+    requirements of smaller groups looking to share information about their neighbourhoods and communities. </p>
+<p>
+By building on the geoJSON standard, almost all online mapping tools are able to load and present our atlases, ensuring the greatest possible interoperability. The open standard will also enable the possibility of wide collaboration by allowing anyone to build new tools, to create or view atlases independently. 
+  </p>
+  <h3>Data storage</h3>
+  <p>
+There is no database for the atlases and all data is contained in the data file. These files are hosted on a web platform called GitHub. 
+  </p>
+
+<p>Tthe atlas data files currently hosted as part of the Comensi project, but the locations can be updated in configuration. </p>
+<p>
+  <ul>
+    <li>Comensi atlas data: <a href="https://github.com/Comensi/atlases">https://github.com/Comensi/atlases</a></li>
+    <li><a href="https://comensi.github.io/atlases/play-vdo5WMIQlF.geojson">Playground atlas source data </a></li>
+  </ul>
+</p>
+
+  <h3>The Atlas Creator</h3>
+<img src-"https://lh6.googleusercontent.com/ENQBnV20BKMWtSUZ1PU1hFrqwpvDKJzYqZDR4sjbcJ4dZOVLgBZwBcyfKkPF6I7ZMca59XBoAZLTKApoqg9fe7HJCHiePJfdbCKAWHbI45s3jU4cGxHQXOK658yw5Uq1d6E1FHcv" />
+  <p>The second component of work is an atlas creator, designed as an initial version to meet the needs of the Comensi project to collect and publish atlases. 
+    This tool has been built for use by a small number of engaged teams, and as such has been created to enable maximum customizability. </p>
+  </p>
+  <p>
+The Atlas creator has been built using an online platform called coda.io. Coda allows us to create rapidly customisable tools for data entry. It has limitations in the kind of aspects that can be changed, but these can easily be overcome by simple training and documentation. 
+  </p>
+<p>
+Data is extracted from Coda using a small back-end system built on an open source tool called Node-Red. 
+  </p>
+
+  <h3>The Atlas Browser</h3>
+<img src="https://lh5.googleusercontent.com/IJdX_zzp-WD11A7uFu12WqphvdGx_bwdgDpnv88ZD6cmvpvWxux1Hd8CO3HwLNtgKO7ywG_KV-NxtmuWiL8svfgvgXuawAYs_O1ZraBY3epqUwLAJkEovy4SpJoccH1wpM36AGWs"/>
+  <p>The tool for exploring community atlases is the third project component. This light-weight application runs entirely in the browser, and will be able to display any atlas that 
+    provides data in our format. 
+  </p>
+<p>
+The browser allows for information to be visualised as maps, timelines or cards, with data filterable in various ways. 
+  </p>
+<p>
+The source code for the browser is available at : <a hre="https://github.com/community-atlas/commaBrowser">https://github.com/community-atlas/commaBrowser</a>
+  </p>  
+  
+  
+  
+<h2>Projects:</h2>
   <ul>
     <li><A href="commaBrowser/index.html">Reference ComMa Geo Browser</a>  
        <li><A href="geojson-editor/index.html">GeoJSON geometry editor</a>  

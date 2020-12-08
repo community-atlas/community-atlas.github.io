@@ -1,9 +1,17 @@
 <html>
 <head>
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 <head>
 <body>
+<div class="container" id="intro">
 <h1>Community Atlas Project</h1>
-
+  </div>
+  <div class="container" id="architecture">
   <h2>Project Architecture</h2>
 <p><strong>
   The Community Atlas is constructed with a few, loosely connected parts. Rather than building one tool to create, view and store atlases, we have split the project into separate elements that communicate through an open data standard. This “decoupled” architecture allows each aspect to be developed independently, and maximises the possible longevity and reusability of the technical work. 
@@ -22,7 +30,7 @@ By building on the geoJSON standard, almost all online mapping tools are able to
 There is no database for the atlases and all data is contained in the data file. These files are hosted on a web platform called GitHub. 
   </p>
 
-<p>Tthe atlas data files currently hosted as part of the Comensi project, but the locations can be updated in configuration. </p>
+<p>The atlas data files currently hosted as part of the Comensi project, but the locations can be updated in configuration. </p>
 <p>
   <ul>
     <li>Comensi atlas data: <a href="https://github.com/Comensi/atlases">https://github.com/Comensi/atlases</a></li>
@@ -55,11 +63,13 @@ The source code for the browser is available at : <a hre="https://github.com/com
   </p>  
   
   
-  
+  </div>
+  <div class="container" id="projects">
 <h2>Projects:</h2>
   <ul>
     <li><A href="commaBrowser/index.html">Reference ComMa Geo Browser</a>  
        <li><A href="geojson-editor/index.html">GeoJSON geometry editor</a>  
   </ul>
+  </div>
 </body>
 </html>

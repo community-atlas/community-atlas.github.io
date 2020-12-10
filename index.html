@@ -5,7 +5,15 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+
+    <script src="https://kit.fontawesome.com/4e9471cd4c.js" crossorigin="anonymous"></script>
+          
+    <style>
+      i {
+        font-size: 7rem;
+      }
+
+    </style>
 <head>
 <body>
 <div class="container" id="intro">
@@ -20,15 +28,16 @@
   </strong></p>
   
   <h3>The Community Mapping Geo Data standard (CommaGeoJSON)</h3>
-<img width="100px" class="left" src="https://lh3.googleusercontent.com/-2TiOJI8wNnQagSj2SYeW9lu3uwkJcW6bNOrDe-cDyboLAowR5AwUrukjl7J4oSaHIof95HC4X_bvP8s-nzosIULkUE1BrZlkx7eZiY_cjGuumNHvniSKelf041Dliof2gF0rINR"/>
+  <i class="fas fa-vector-square left"></i>
   <p>The foundation of the atlas platform is a way of storing and sharing geodata. This standard is based on geoJSON,
     the primary open standard for sharing geo information, but extends this base to include a set of features that better suit the
     requirements of smaller groups looking to share information about their neighbourhoods and communities. </p>
-    <p>Standard definition: https://community-atlas.github.io/commaGeoJson-spec/</p>
+    <p>CommaGeoJSON Standard definition: <a href="https://community-atlas.github.io/commaGeoJson-spec/">https://community-atlas.github.io/commaGeoJson-spec/</a></p>
 <p>
 By building on the geoJSON standard, almost all online mapping tools are able to load and present our atlases, ensuring the greatest possible interoperability. The open standard will also enable the possibility of wide collaboration by allowing anyone to build new tools, to create or view atlases independently. 
   </p>
   <h3>Data storage</h3>
+  <i class="fas fa-database left"></i>
   <p>
 There is no database for the atlases and all data is contained in the data file. These files are hosted on a web platform called GitHub. 
   </p>
@@ -42,7 +51,7 @@ There is no database for the atlases and all data is contained in the data file.
 </p>
 
   <h3>The Atlas Creator</h3>
-<img width="100px" class="left" src="https://lh6.googleusercontent.com/ENQBnV20BKMWtSUZ1PU1hFrqwpvDKJzYqZDR4sjbcJ4dZOVLgBZwBcyfKkPF6I7ZMca59XBoAZLTKApoqg9fe7HJCHiePJfdbCKAWHbI45s3jU4cGxHQXOK658yw5Uq1d6E1FHcv" />
+  <i class="fas fa-edit left"></i>
   <p>The second component of work is an atlas creator, designed as an initial version to meet the needs of the Comensi project to collect and publish atlases. 
     This tool has been built for use by a small number of engaged teams, and as such has been created to enable maximum customizability. </p>
   </p>
@@ -55,7 +64,7 @@ Data is extracted from Coda using a small back-end system built on an open sourc
   </p>
 
   <h3>The Atlas Browser</h3>
-<img class="left" width="100px" src="https://lh5.googleusercontent.com/IJdX_zzp-WD11A7uFu12WqphvdGx_bwdgDpnv88ZD6cmvpvWxux1Hd8CO3HwLNtgKO7ywG_KV-NxtmuWiL8svfgvgXuawAYs_O1ZraBY3epqUwLAJkEovy4SpJoccH1wpM36AGWs"/>
+  <i class="fas fa-window-maximize left"></i>
   <p>The tool for exploring community atlases is the third project component. This light-weight application runs entirely in the browser, and will be able to display any atlas that 
     provides data in our format. 
   </p>
@@ -63,16 +72,17 @@ Data is extracted from Coda using a small back-end system built on an open sourc
 The browser allows for information to be visualised as maps, timelines or cards, with data filterable in various ways. 
   </p>
 <p>
-The source code for the browser is available at : <a hre="https://github.com/community-atlas/commaBrowser">https://github.com/community-atlas/commaBrowser</a>
+The source code for the browser is available at : <a href="https://github.com/community-atlas/commaBrowser">https://github.com/community-atlas/commaBrowser</a>
   </p>  
   
   
   </div>
   <div class="container" id="projects">
-<h2>Projects:</h2>
+<h2>Sub Projects:</h2>
   <ul>
-    <li><A href="commaBrowser/index.html">Reference ComMa Geo Browser</a>  
-       <li><A href="geojson-editor/index.html">GeoJSON geometry editor</a>  
+    <li><a href="https://community-atlas.github.io/commaGeoJson-spec/">commaGeoJSON Specification</a></li>
+    <li><A href="commaBrowser/index.html">Reference ComMa Geo Browser</a>  </li>
+    <li><A href="geojson-editor/index.html">GeoJSON geometry editor</a>  </li>
   </ul>
   </div>
 </body>

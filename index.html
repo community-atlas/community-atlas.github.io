@@ -1,89 +1,193 @@
 <html>
+
 <head>
-   <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/4e9471cd4c.js" crossorigin="anonymous"></script>
-          
-    <style>
-      i {
-        font-size: 7rem;
-      }
+  <script src="https://kit.fontawesome.com/4e9471cd4c.js" crossorigin="anonymous"></script>
 
-    </style>
-<head>
+  <style>
+    i {
+      font-size: 7rem;
+    }
+  </style>
+</head>
+
 <body>
-<div class="container" id="intro">
-  <img src="img/comensi-logo-atlas-heavy@4x.png" alt="Community Atlas Toolkit"/>
-  <h1>Community Atlas Toolkit</h1>
+  <div class="container" id="intro">
+    <div class="row">
+      <div class="col s12">
 
+        <img src="img/comensi-logo-atlas-heavy@4x.png" alt="Community Atlas Toolkit" />
+        <h1>Community Atlas Toolkit</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="overview">
+    <div class="row">
+      <div class="col s12">
+        <h2>Overview</h2>
+<p>The Community Atlas toolkit provides a simple set of tools for creating online "atlases". </p>
+<p>
+  The toolkit is comprised of a set of key components:
+<ul>
+  <li>A data standard (CommaGeoJSON)</li>
+  <li>A reference browser implementation (CommaBrowser)</li>
+  <li>A demo atlas editor (Implemented using Coda.io)</li>
+</ul>
+</p>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col s12">
+        <h3>The Comma Browser</h3>        
+        The browser provides a way to explore community atlases built using the CommaGeoJSON Format. 
+      </div>    
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h4>Geo-spatial view</h4>        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3">
+        <img src="img/screenshot-map.jpg" class="responsive-img" />
+      </div>
+      <div class="col s9">
+        The browser provides a geospatial view of the atlas, allowing for the exploration of a dataset on a map. 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h4>The Timeline</h4>       
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3">
+        <img src="img/screenshot-timeline.jpg" class="responsive-img" />
+      </div>
+      <div class="col s9">
+        The timeline view provides allows the atlas to be explored as a timeline. 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h4>Cards</h4>       
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3">
+        <img src="img/screenshot-cards.jpg" class="responsive-img" />
+      </div>
+      <div class="col s9">
+        The card view makes it possible to view the atlas as a set of "cards".
+      </div>
+    </div>
   </div>
   <div class="container" id="architecture">
-  <h2>Project Architecture</h2>
-<p><strong>
-  The Community Atlas is constructed with a few, loosely connected parts. Rather than building one tool to create, view and store atlases, we have split the project into separate elements that communicate through an open data standard. This “decoupled” architecture allows each aspect to be developed independently, and maximises the possible longevity and reusability of the technical work. 
-  </strong></p>
-  
-  <h3>The Community Mapping Geo Data standard (CommaGeoJSON)</h3>
-  <i class="fas fa-vector-square left"></i>
-  <p>The foundation of the atlas platform is a way of storing and sharing geodata. This standard is based on geoJSON,
-    the primary open standard for sharing geo information, but extends this base to include a set of features that better suit the
-    requirements of smaller groups looking to share information about their neighbourhoods and communities. </p>
-    <p>CommaGeoJSON Standard definition: <a href="https://community-atlas.github.io/commaGeoJson-spec/">https://community-atlas.github.io/commaGeoJson-spec/</a></p>
-<p>
-By building on the geoJSON standard, almost all online mapping tools are able to load and present our atlases, ensuring the greatest possible interoperability. The open standard will also enable the possibility of wide collaboration by allowing anyone to build new tools, to create or view atlases independently. 
-  </p>
-  <h3>Data storage</h3>
-  <i class="fas fa-database left"></i>
-  <p>
-There is no database for the atlases and all data is contained in the data file. These files are hosted on a web platform called GitHub. 
-  </p>
+    <div class="row">
+      <div class="col s12">
+        <h2>Project Architecture</h2>
+        <p><strong>
+            The Community Atlas is constructed with a few, loosely connected parts. Rather than building one tool to
+            create, view and store atlases, we have split the project into separate elements that communicate through an
+            open data standard. This “decoupled” architecture allows each aspect to be developed independently, and
+            maximises the possible longevity and reusability of the technical work.
+          </strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h3>The Community Mapping Geo Data standard (CommaGeoJSON)</h3>
+        <i class="fas fa-vector-square left"></i>
+        <p>The foundation of the atlas platform is a way of storing and sharing geodata. This standard is based on
+          geoJSON,
+          the primary open standard for sharing geo information, but extends this base to include a set of features that
+          better suit the
+          requirements of smaller groups looking to share information about their neighbourhoods and communities. </p>
+        <p>CommaGeoJSON Standard definition: <a
+            href="https://community-atlas.github.io/commaGeoJson-spec/">https://community-atlas.github.io/commaGeoJson-spec/</a>
+        </p>
+        <p>
+          By building on the geoJSON standard, almost all online mapping tools are able to load and present our atlases,
+          ensuring the greatest possible interoperability. The open standard will also enable the possibility of wide
+          collaboration by allowing anyone to build new tools, to create or view atlases independently.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h3>The Atlas Browser</h3>
+        <i class="fas fa-window-maximize left"></i>
+        <p>The tool for exploring community atlases is the third project component. This light-weight application runs
+          entirely in the browser, and will be able to display any atlas that
+          provides data in our format.
+        </p>
+        <p>
+          The browser allows for information to be visualised as maps, timelines or cards, with data filterable in
+          various ways.
+        </p>
+        <p>
+          The source code for the browser is available at : <a
+            href="https://github.com/community-atlas/commaBrowser">https://github.com/community-atlas/commaBrowser</a>
+        </p>
 
-<p>The atlas data files currently hosted as part of the Comensi project, but the locations can be updated in configuration. </p>
-<p>
-  <ul>
-    <li>Comensi atlas data: <a href="https://github.com/Comensi/atlases">https://github.com/Comensi/atlases</a></li>
-    <li><a href="https://comensi.github.io/atlases/play-vdo5WMIQlF.geojson">Playground atlas source data </a></li>
-  </ul>
-</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h3>Data storage</h3>
+        <i class="fas fa-database left"></i>
+        <p>
+          There is no database for the atlases and all data is contained in the data file.
+        </p>
 
-  <h3>The Atlas Creator</h3>
-  <i class="fas fa-edit left"></i>
-  <p>The second component of work is an atlas creator, designed as an initial version to meet the needs of the Comensi project to collect and publish atlases. 
-    This tool has been built for use by a small number of engaged teams, and as such has been created to enable maximum customizability. </p>
-  </p>
-  <p>
-The Atlas creator has been built using an online platform called coda.io. Coda allows us to create rapidly customisable tools for data entry. It has limitations in the kind of aspects that can be changed, but these can easily be overcome by simple training and documentation. 
-  </p>
-  <p><a href="https://coda.io/@greenman/playground-atlas">The atlas creator for Comensi's Playground Test Atlas</a></p>
-<p>
-Data is extracted from Coda using a small back-end system built on an open source tool called Node-Red. 
-  </p>
+        <p>The atlas data files currently hosted as part of the Comensi project, but the locations can be updated in
+          configuration. </p>
+        <p>
+        <ul>
+          <li>Comensi atlas data: <a href="https://github.com/Comensi/atlases">https://github.com/Comensi/atlases</a>
+          </li>
+          <li><a href="https://comensi.github.io/atlases/play-vdo5WMIQlF.geojson">Playground atlas source data </a></li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h3>The Atlas Creator</h3>
+        <i class="fas fa-edit left"></i>
+        <p>The second component of work is an atlas creator, designed as an initial version to meet the needs of the
+          Comensi project to collect and publish atlases.
+          This tool has been built for use by a small number of engaged teams, and as such has been created to enable
+          maximum customizability. </p>
+        </p>
+        <p>
+          The Atlas creator has been built using an online platform called coda.io. Coda allows us to create rapidly
+          customisable tools for data entry. It has limitations in the kind of aspects that can be changed, but these
+          can easily be overcome by simple training and documentation.
+        </p>
+        <p><a href="https://coda.io/@greenman/playground-atlas">The atlas creator for Comensi's Playground Test
+            Atlas</a></p>
+        <p>
+          Data is extracted from Coda using a small back-end system built on an open source tool called Node-Red.
+        </p>
+      </div>
+    </div>
 
-  <h3>The Atlas Browser</h3>
-  <i class="fas fa-window-maximize left"></i>
-  <p>The tool for exploring community atlases is the third project component. This light-weight application runs entirely in the browser, and will be able to display any atlas that 
-    provides data in our format. 
-  </p>
-<p>
-The browser allows for information to be visualised as maps, timelines or cards, with data filterable in various ways. 
-  </p>
-<p>
-The source code for the browser is available at : <a href="https://github.com/community-atlas/commaBrowser">https://github.com/community-atlas/commaBrowser</a>
-  </p>  
-  
-  
+
   </div>
   <div class="container" id="projects">
-<h2>Sub Projects:</h2>
-  <ul>
-    <li><a href="https://community-atlas.github.io/commaGeoJson-spec/">commaGeoJSON Specification</a></li>
-    <li><A href="commaBrowser/index.html">Reference ComMa Geo Browser</a>  </li>
-    <li><A href="geojson-editor/index.html">GeoJSON geometry editor</a>  </li>
-  </ul>
+    <h2>Sub Projects:</h2>
+    <ul>
+      <li><a href="https://community-atlas.github.io/commaGeoJson-spec/">commaGeoJSON Specification</a></li>
+      <li><A href="commaBrowser/index.html">Reference ComMa Geo Browser</a> </li>
+      <li><A href="geojson-editor/index.html">GeoJSON geometry editor</a> </li>
+    </ul>
   </div>
 </body>
+
 </html>
